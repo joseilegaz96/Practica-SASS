@@ -1,0 +1,104 @@
+$var1: #3b71eb;
+$var2: #6ba6c4;
+$var3: #2771aa;
+$var4: #6fcd59;
+$var5: #e86943;
+$var6: #e7d277;
+
+body {
+	background-image: url(..);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: fit-content;
+	margin: 0 auto;
+}
+h1 {
+	background-color: @var1;
+	opacity: .8;
+	border-radius: 10px;
+	text-align: center;
+	width: fit-content;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	color: white;
+}
+div {
+	display: block;
+	margin: 20px 0px 20px 20px;
+	> div {
+		margin: 0.7rem;
+		border-radius: 5px;
+		padding: 0.5rem;
+	}
+}
+.column {
+	float: left;
+	width: fit-content;
+	height: fit-content;
+	box-sizing: border-box;
+	width: 350px;
+	background: rgba(255, 255, 255, 0.4);
+}
+#kanban .column .card:hover {
+	color: white;
+	background-color: @var2;
+}
+.card:hover .fas {
+	color: @var3;
+}
+.card:hover .fa-circle-xmark {
+	color: black;
+}
+#kanban .column .card {
+	border-radius: 10px;
+	padding: 10px;
+	background: white;
+	margin-bottom: 10px;
+}
+.tag {
+	display: inline-block;
+	width: fit-content;
+}
+#kanban .column h2 {
+	padding-left: 10px;
+}
+.circle-green {
+	background-color: @var4;
+	border: 2px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+.circle-red {
+	background-color: @var5;
+	border: 2px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.circle-yellow {
+	background-color: @var6;
+	border: 2px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+.fas {
+	color: white;
+	width: fit-content;
+	height: fit-content;
+	text-align: center;
+	padding: 0.5rem;
+	display: block;
+	margin: 0 auto;
+}
+.fa-circle-xmark {
+	color: red;
+	position: relative;
+	width: fit-content;
+	float: right;
+}
